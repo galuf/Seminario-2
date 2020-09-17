@@ -1,0 +1,88 @@
+create_organism        10
+threshold_activation   60
+threshold_inhibition   60
+mutation_rate_mol_cell  1
+mutation_rate_atom_mol 40
+molecular_shape_size   14
+
+create_cell       1  20 rect 5 4  input 0
+n_receptors_cell  1   4
+n_effectors_cell  1   4
+n_internal_cell   1  12 
+p_inhibitors_cell 1  20
+
+create_cell       2  20 rect 5 4 input  0
+n_receptors_cell  2   4
+n_effectors_cell  2   4
+n_internal_cell   2  12    
+p_inhibitors_cell 2   20
+
+create_cell       3  20 rect 5 4 input  0
+n_receptors_cell  3   4
+n_effectors_cell  3   4
+n_internal_cell   3  12
+p_inhibitors_cell 3  20    
+  
+create_cell       4  20 rect 5 4 internal1 0
+n_receptors_cell  4  4
+n_effectors_cell  4  4
+n_internal_cell   4  12    
+p_inhibitors_cell 4  20
+
+create_cell        5  20 rect 5 4 internal1 0
+create_cell        6  20 rect 5 4 internal1 0
+copy_structure_cell 4 5
+copy_structure_cell 4 6
+
+create_cell        7  20 rect 5 4 internal2 0
+n_receptors_cell   7   4
+n_effectors_cell   7   4
+n_internal_cell    7  12
+p_inhibitors_cell  7   20
+
+create_cell        8  20 rect 5 4 internal2 0
+create_cell         9  20 rect 5 4 internal2 0 
+copy_structure_cell 7  8
+copy_structure_cell 7  9
+
+create_cell        10  25 rect 5 5 output 5
+n_receptors_cell   10   5
+n_effectors_cell   10   5
+n_internal_cell    10  15
+p_inhibitors_cell  10  20 
+
+ 
+cell_cell 1  4
+cell_cell 1  5
+cell_cell 1  6
+
+cell_cell 2  4
+cell_cell 2  5
+cell_cell 2  6
+
+cell_cell 3  4
+cell_cell 3  5
+cell_cell 3  6
+
+cell_cell 4  7
+cell_cell 4  8
+cell_cell 4  9 
+
+cell_cell 5  7
+cell_cell 5  8
+cell_cell 5  9  
+
+cell_cell  6  7
+cell_cell  6  8
+cell_cell  6  9
+
+cell_cell 7   10
+cell_cell 8   10
+cell_cell 9   10
+
+fraction_input_vector  2
+
+minimal_global_error   0.001
+seeds 1502475804 98195
+
+end.

@@ -1,0 +1,14 @@
+Entrenamiento con data en 70% -->  717 elementos
+Testeo con data 30% --> 307 elementos
+
+            Accuracy
+subdata1    1.000000
+subdata2    0.719870    entrenado al 96% 154419 epocas
+subdata3    1.000000
+subdata4    0.726384    entrenado al 96% 174214 epocas
+subdata5    1.000000
+subdata6    0.710098    entrenado al 96%  13800 epocas
+subdata7    0.775244    entrenado al 96% 14027 epocas  
+subdata8    0.996743
+subdata9    1.000000
+subdata10   1.000000
